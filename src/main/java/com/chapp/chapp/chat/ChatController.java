@@ -24,7 +24,7 @@ public class ChatController {
     // send chat message will
     @MessageMapping("/chat.sendMessage")
     @SendTo("/topic/public") // in the config file topic
-    public ChatMessage sendMessage(@Payload ChatMessage chatMessage) {
-        return chatMessage;
+    public ChatMessage sendMessage(@Payload ChatMessage Message) {
+        return Message;
     }
 }
